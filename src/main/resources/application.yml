@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Venturing_Digitally_JWT_AUTH_Implementation
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/venturing_security
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format-sql: true
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+logging:
+  level:
+    org.springframework.security: TRACE
+ 
+server:
+  port: 8081   
